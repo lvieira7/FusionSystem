@@ -66,6 +66,7 @@
             // 
             resources.ApplyResources(txtUsuarioLogin, "txtUsuarioLogin");
             txtUsuarioLogin.Name = "txtUsuarioLogin";
+            txtUsuarioLogin.TextChanged += txtUsuarioLogin_TextChanged;
             // 
             // lbUsuarioLogin
             // 

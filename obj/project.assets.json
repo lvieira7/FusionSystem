@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucas.vieira\\Desktop\\FusionSystem\\FusionSystem\\FusionSystem.csproj",
+      "projectUniqueName": "C:\\Users\\lucas.vieira\\source\\repos\\prodRemoto\\FusionSystem.csproj",
       "projectName": "FusionSystem",
-      "projectPath": "C:\\Users\\lucas.vieira\\Desktop\\FusionSystem\\FusionSystem\\FusionSystem.csproj",
+      "projectPath": "C:\\Users\\lucas.vieira\\source\\repos\\prodRemoto\\FusionSystem.csproj",
       "packagesPath": "C:\\Users\\lucas.vieira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucas.vieira\\Desktop\\FusionSystem\\FusionSystem\\obj\\",
+      "outputPath": "C:\\Users\\lucas.vieira\\source\\repos\\prodRemoto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lucas.vieira\\AppData\\Roaming\\NuGet\\NuGet.Config",
