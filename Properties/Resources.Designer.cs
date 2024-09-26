@@ -69,5 +69,15 @@ namespace FusionSystem.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap luxa_org_opacity_changed_logotipoFrmHome {
+            get {
+                object obj = ResourceManager.GetObject("luxa.org-opacity-changed-logotipoFrmHome", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

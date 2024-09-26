@@ -16,8 +16,10 @@ namespace FusionSystem
         public FrmHome()
         {
             // Instanciando configuração padrão de página
-            DefaultForm frm = new(); // this indica o frm atual
-            frm.Default(this);
+            //DefaultForm frm = new(); // this indica o frm atual
+            //frm.Default(this);
+
+            DefaultForm.Default(this);
             InitializeComponent();
         }
     }
