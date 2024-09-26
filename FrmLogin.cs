@@ -57,6 +57,10 @@ namespace FusionSystem
             {
                 txtUsuarioLogin.BackColor = Color.Red;
             }
+            else
+            {
+                txtUsuarioLogin.BackColor = Color.White;
+            }
             #endregion
         }
     }

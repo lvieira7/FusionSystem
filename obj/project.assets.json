@@ -8,19 +8,19 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\lviei\\.nuget\\packages\\": {}
+    "C:\\Users\\lucas.vieira\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\Remoto\\FusionSystem\\FusionSystem.csproj",
+      "projectUniqueName": "C:\\Users\\lucas.vieira\\Desktop\\DEV\\FusionSystem.csproj",
       "projectName": "FusionSystem",
-      "projectPath": "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\Remoto\\FusionSystem\\FusionSystem.csproj",
-      "packagesPath": "C:\\Users\\lviei\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\Remoto\\FusionSystem\\obj\\",
+      "projectPath": "C:\\Users\\lucas.vieira\\Desktop\\DEV\\FusionSystem.csproj",
+      "packagesPath": "C:\\Users\\lucas.vieira\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucas.vieira\\Desktop\\DEV\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lviei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lucas.vieira\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

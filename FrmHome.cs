@@ -22,5 +22,11 @@ namespace FusionSystem
             DefaultForm.Default(this);
             InitializeComponent();
         }
+
+        private void menuAdicionar_Click(object sender, EventArgs e)
+        {
+            FrmAddUser frm = new();
+            frm.Show();
+        }
     }
 }

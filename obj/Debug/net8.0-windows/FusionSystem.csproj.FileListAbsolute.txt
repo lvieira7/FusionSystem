@@ -57,3 +57,25 @@ C:\Users\lviei\OneDrive\Área de Trabalho\Remoto\FusionSystem\bin\Debug\net8.0-w
 C:\Users\lviei\OneDrive\Área de Trabalho\Remoto\FusionSystem\bin\Debug\net8.0-windows\FusionSystem.pdb
 C:\Users\lviei\OneDrive\Área de Trabalho\Remoto\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.genruntimeconfig.cache
 C:\Users\lviei\OneDrive\Área de Trabalho\Remoto\FusionSystem\obj\Debug\net8.0-windows\ref\FusionSystem.dll
+C:\Users\lucas.vieira\Desktop\DEV\bin\Debug\net8.0-windows\FusionSystem.exe
+C:\Users\lucas.vieira\Desktop\DEV\bin\Debug\net8.0-windows\FusionSystem.deps.json
+C:\Users\lucas.vieira\Desktop\DEV\bin\Debug\net8.0-windows\FusionSystem.runtimeconfig.json
+C:\Users\lucas.vieira\Desktop\DEV\bin\Debug\net8.0-windows\FusionSystem.dll
+C:\Users\lucas.vieira\Desktop\DEV\bin\Debug\net8.0-windows\FusionSystem.pdb
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.FrmHome.resources
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.FrmLogin.resources
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.FrmPDV.resources
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.Properties.Resources.resources
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.csproj.GenerateResource.cache
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.AssemblyInfoInputs.cache
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.AssemblyInfo.cs
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.csproj.CoreCompileInputs.cache
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.sourcelink.json
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.dll
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\refint\FusionSystem.dll
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.pdb
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.genruntimeconfig.cache
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\ref\FusionSystem.dll
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.FrmAddUser.resources
+C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.FrmViewUser.resources
