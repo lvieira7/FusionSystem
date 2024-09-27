@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas.vieira\\Desktop\\DEV\\FusionSystem.csproj": {}
+    "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\DEV\\FusionSystem\\FusionSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas.vieira\\Desktop\\DEV\\FusionSystem.csproj": {
+    "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\DEV\\FusionSystem\\FusionSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas.vieira\\Desktop\\DEV\\FusionSystem.csproj",
+        "projectUniqueName": "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\DEV\\FusionSystem\\FusionSystem.csproj",
         "projectName": "FusionSystem",
-        "projectPath": "C:\\Users\\lucas.vieira\\Desktop\\DEV\\FusionSystem.csproj",
-        "packagesPath": "C:\\Users\\lucas.vieira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas.vieira\\Desktop\\DEV\\obj\\",
+        "projectPath": "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\DEV\\FusionSystem\\FusionSystem.csproj",
+        "packagesPath": "C:\\Users\\lviei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\DEV\\FusionSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lucas.vieira\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lviei\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

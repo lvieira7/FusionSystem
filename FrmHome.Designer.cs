@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             menuHome = new MenuStrip();
-            menuPdv = new ToolStripMenuItem();
+            menuCheckout = new ToolStripMenuItem();
             menuRelatorio = new ToolStripMenuItem();
             menuEstoque = new ToolStripMenuItem();
             menuProdutos = new ToolStripMenuItem();
@@ -42,6 +42,7 @@
             menuTermo = new ToolStripMenuItem();
             menuFusionSystem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
+            menuPDV = new ToolStripMenuItem();
             menuHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -49,111 +50,120 @@
             // menuHome
             // 
             menuHome.ImageScalingSize = new Size(20, 20);
-            menuHome.Items.AddRange(new ToolStripItem[] { menuPdv, menuEstoque, menuUsuarios, menuSuporte, menuDocumentacao });
+            menuHome.Items.AddRange(new ToolStripItem[] { menuCheckout, menuEstoque, menuUsuarios, menuSuporte, menuDocumentacao });
             menuHome.Location = new Point(0, 0);
             menuHome.Name = "menuHome";
-            menuHome.Size = new Size(800, 24);
+            menuHome.Padding = new Padding(8, 3, 0, 3);
+            menuHome.Size = new Size(1029, 31);
             menuHome.TabIndex = 0;
             menuHome.Text = "menuStrip1";
             // 
-            // menuPdv
+            // menuCheckout
             // 
-            menuPdv.DropDownItems.AddRange(new ToolStripItem[] { menuRelatorio });
-            menuPdv.Name = "menuPdv";
-            menuPdv.Size = new Size(102, 20);
-            menuPdv.Text = "Ponto de Venda";
+            menuCheckout.DropDownItems.AddRange(new ToolStripItem[] { menuPDV, menuRelatorio });
+            menuCheckout.Name = "menuCheckout";
+            menuCheckout.Size = new Size(61, 25);
+            menuCheckout.Text = "Caixa";
             // 
             // menuRelatorio
             // 
             menuRelatorio.Name = "menuRelatorio";
-            menuRelatorio.Size = new Size(121, 22);
+            menuRelatorio.Size = new Size(224, 26);
             menuRelatorio.Text = "Relatório";
             // 
             // menuEstoque
             // 
             menuEstoque.DropDownItems.AddRange(new ToolStripItem[] { menuProdutos });
             menuEstoque.Name = "menuEstoque";
-            menuEstoque.Size = new Size(61, 20);
+            menuEstoque.Size = new Size(79, 25);
             menuEstoque.Text = "Estoque";
             // 
             // menuProdutos
             // 
             menuProdutos.Name = "menuProdutos";
-            menuProdutos.Size = new Size(122, 22);
+            menuProdutos.Size = new Size(157, 26);
             menuProdutos.Text = "Produtos";
+            menuProdutos.Click += menuProdutos_Click;
             // 
             // menuUsuarios
             // 
             menuUsuarios.DropDownItems.AddRange(new ToolStripItem[] { menuAdicionar, menuConsultar });
             menuUsuarios.Name = "menuUsuarios";
-            menuUsuarios.Size = new Size(64, 20);
+            menuUsuarios.Size = new Size(85, 25);
             menuUsuarios.Text = "Usuários";
             // 
             // menuAdicionar
             // 
             menuAdicionar.Name = "menuAdicionar";
-            menuAdicionar.Size = new Size(180, 22);
+            menuAdicionar.Size = new Size(161, 26);
             menuAdicionar.Text = "Adicionar";
             menuAdicionar.Click += menuAdicionar_Click;
             // 
             // menuConsultar
             // 
             menuConsultar.Name = "menuConsultar";
-            menuConsultar.Size = new Size(180, 22);
+            menuConsultar.Size = new Size(161, 26);
             menuConsultar.Text = "Consultar";
             // 
             // menuSuporte
             // 
             menuSuporte.DropDownItems.AddRange(new ToolStripItem[] { menuContato });
             menuSuporte.Name = "menuSuporte";
-            menuSuporte.Size = new Size(60, 20);
+            menuSuporte.Size = new Size(79, 25);
             menuSuporte.Text = "Suporte";
             // 
             // menuContato
             // 
             menuContato.Name = "menuContato";
-            menuContato.Size = new Size(117, 22);
+            menuContato.Size = new Size(149, 26);
             menuContato.Text = "Contato";
             // 
             // menuDocumentacao
             // 
             menuDocumentacao.DropDownItems.AddRange(new ToolStripItem[] { menuTermo, menuFusionSystem });
             menuDocumentacao.Name = "menuDocumentacao";
-            menuDocumentacao.Size = new Size(100, 20);
+            menuDocumentacao.Size = new Size(128, 25);
             menuDocumentacao.Text = "Documentação";
             // 
             // menuTermo
             // 
             menuTermo.Name = "menuTermo";
-            menuTermo.Size = new Size(150, 22);
+            menuTermo.Size = new Size(195, 26);
             menuTermo.Text = "Termo de uso";
             // 
             // menuFusionSystem
             // 
             menuFusionSystem.Name = "menuFusionSystem";
-            menuFusionSystem.Size = new Size(150, 22);
+            menuFusionSystem.Size = new Size(195, 26);
             menuFusionSystem.Text = "Fusion System";
             // 
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.luxa_org_opacity_changed_logotipoFrmHome;
-            pictureBox1.Location = new Point(0, 24);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Location = new Point(0, 31);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(800, 426);
+            pictureBox1.Size = new Size(1029, 599);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
+            // menuPDV
+            // 
+            menuPDV.Name = "menuPDV";
+            menuPDV.Size = new Size(224, 26);
+            menuPDV.Text = "Ponto de Venda";
+            menuPDV.Click += menuPDV_Click;
+            // 
             // FrmHome
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1029, 630);
             Controls.Add(pictureBox1);
             Controls.Add(menuHome);
             MainMenuStrip = menuHome;
+            Margin = new Padding(4);
             Name = "FrmHome";
             Text = "Página Inicial";
             menuHome.ResumeLayout(false);
@@ -166,7 +176,7 @@
         #endregion
 
         private MenuStrip menuHome;
-        private ToolStripMenuItem menuPdv;
+        private ToolStripMenuItem menuCheckout;
         private ToolStripMenuItem menuRelatorio;
         private ToolStripMenuItem menuEstoque;
         private ToolStripMenuItem menuProdutos;
@@ -179,5 +189,6 @@
         private ToolStripMenuItem menuFusionSystem;
         private ToolStripMenuItem menuConsultar;
         private PictureBox pictureBox1;
+        private ToolStripMenuItem menuPDV;
     }
 }
