@@ -1,6 +1,7 @@
 using FusionSystem.Classes;
 using System.Runtime.Versioning;
 using System.Security.Cryptography.X509Certificates;
+using System.Windows.Forms;
 
 namespace FusionSystem
 {
@@ -9,16 +10,14 @@ namespace FusionSystem
 
         public FrmLogin()
         {
-            DefaultForm.Default(this);
-
-
             InitializeComponent();
-
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btnAcessar_Click(object sender, EventArgs e)
         {
-
             #region Verifica se os campos estão preenchidos
 
             bool isValid = !string.IsNullOrEmpty(txtUsuarioLogin.Text); //boolean recebe valor do método ( se sim, então não)
@@ -42,8 +41,6 @@ namespace FusionSystem
                 MessageBox.Show("Os seguintes campos precisam serem preenchidos.", "Campos vazios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             #endregion
-
-
         }
 
         private void txtUsuarioLogin_TextChanged(object sender, EventArgs e)

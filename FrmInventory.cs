@@ -11,10 +11,13 @@ using System.Windows.Forms;
 
 namespace FusionSystem
 {
-    public partial class FrmPDV : Form
+
+    public partial class FrmInventory : Form
     {
-        public FrmPDV()
+
+        public FrmInventory()
         {
+            
             InitializeComponent();
             DefaultForm.Default(this);
         }

@@ -1,19 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="FrmAddUser.cs">
+    <Compile Update="FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmHome.cs">
+    <Compile Update="FrmInventory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmPDV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FrmViewUser.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -8,13 +8,12 @@ namespace FusionSystem.Classes
 {
     internal class Empty
     {
-        public static void  IsEmpty(TextBox txt, Label lb)
+        public static void IsEmpty(TextBox txt, Label lb)
         {
             if (string.IsNullOrEmpty(txt.Text))
             {
                 lb.ForeColor = Color.Red;
                 lb.Text += " *";
-                
             }
             else
             {

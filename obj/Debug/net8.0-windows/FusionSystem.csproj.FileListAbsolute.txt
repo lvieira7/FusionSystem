@@ -79,3 +79,24 @@ C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.genrunti
 C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\ref\FusionSystem.dll
 C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.FrmAddUser.resources
 C:\Users\lucas.vieira\Desktop\DEV\obj\Debug\net8.0-windows\FusionSystem.FrmViewUser.resources
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.FrmHome.resources
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.FrmLogin.resources
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.FrmPDV.resources
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.Properties.Resources.resources
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.csproj.GenerateResource.cache
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.AssemblyInfoInputs.cache
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.AssemblyInfo.cs
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.csproj.CoreCompileInputs.cache
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.sourcelink.json
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.dll
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\refint\FusionSystem.dll
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.pdb
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\bin\Debug\net8.0-windows\FusionSystem.exe
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\bin\Debug\net8.0-windows\FusionSystem.deps.json
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\bin\Debug\net8.0-windows\FusionSystem.runtimeconfig.json
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\bin\Debug\net8.0-windows\FusionSystem.dll
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\bin\Debug\net8.0-windows\FusionSystem.pdb
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.genruntimeconfig.cache
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\ref\FusionSystem.dll
+C:\Users\lviei\OneDrive\Área de Trabalho\DEV\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.FrmInventory.resources

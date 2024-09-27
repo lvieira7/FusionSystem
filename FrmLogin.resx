@@ -123,10 +123,14 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>84, 8</value>
+    <value>108, 11</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 105</value>
+    <value>149, 147</value>
   </data>
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -148,10 +152,13 @@
     <value>0</value>
   </data>
   <data name="txtSenhaLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 185</value>
+    <value>93, 259</value>
+  </data>
+  <data name="txtSenhaLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="txtSenhaLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 23</value>
+    <value>176, 29</value>
   </data>
   <data name="txtSenhaLogin.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -175,10 +182,13 @@
     <value>NoControl</value>
   </data>
   <data name="lbSenhaLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 167</value>
+    <value>93, 234</value>
+  </data>
+  <data name="lbSenhaLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lbSenhaLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 15</value>
+    <value>53, 21</value>
   </data>
   <data name="lbSenhaLogin.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -202,10 +212,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnAcessar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 220</value>
+    <value>122, 308</value>
+  </data>
+  <data name="btnAcessar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="btnAcessar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 29</value>
+    <value>117, 41</value>
   </data>
   <data name="btnAcessar.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -226,10 +239,13 @@
     <value>3</value>
   </data>
   <data name="txtUsuarioLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 137</value>
+    <value>93, 192</value>
+  </data>
+  <data name="txtUsuarioLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="txtUsuarioLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 23</value>
+    <value>176, 29</value>
   </data>
   <data name="txtUsuarioLogin.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -253,10 +269,13 @@
     <value>NoControl</value>
   </data>
   <data name="lbUsuarioLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 119</value>
+    <value>93, 167</value>
+  </data>
+  <data name="lbUsuarioLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="lbUsuarioLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 15</value>
+    <value>64, 21</value>
   </data>
   <data name="lbUsuarioLogin.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -280,10 +299,16 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
+    <value>9, 21</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>284, 261</value>
+    <value>365, 365</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tela de Login</value>

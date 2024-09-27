@@ -15,18 +15,28 @@ namespace FusionSystem
     {
         public FrmHome()
         {
-            // Instanciando configuração padrão de página
-            //DefaultForm frm = new(); // this indica o frm atual
-            //frm.Default(this);
-
-            DefaultForm.Default(this);
             InitializeComponent();
+            DefaultForm.Default(this);
         }
 
         private void menuAdicionar_Click(object sender, EventArgs e)
         {
-            FrmAddUser frm = new();
+            //FrmAddUser frm = new();
+            //frm.Show();
+        }
+
+        private void menuProdutos_Click(object sender, EventArgs e)
+        {
+            FrmInventory frm = new FrmInventory();
             frm.Show();
+            this.Hide();
+        }
+
+        private void menuPDV_Click(object sender, EventArgs e)
+        {
+            FrmPDV frm = new FrmPDV();
+            frm.Show(); 
+            this.Hide();
         }
     }
 }
