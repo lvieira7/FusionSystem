@@ -29,116 +29,129 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtEndAdd = new TextBox();
             button1 = new Button();
-            textBox2 = new TextBox();
+            txtNomeAdd = new TextBox();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            maskedTextBox1 = new MaskedTextBox();
-            maskedTextBox2 = new MaskedTextBox();
+            txtCpfAdd = new MaskedTextBox();
+            txtTelAdd = new MaskedTextBox();
             groupBox1 = new GroupBox();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(250, 259);
+            label1.Location = new Point(321, 363);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(56, 15);
+            label1.Size = new Size(74, 21);
             label1.TabIndex = 0;
             label1.Text = "Endereço";
             // 
-            // textBox1
+            // txtEndAdd
             // 
-            textBox1.Location = new Point(250, 277);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(293, 23);
-            textBox1.TabIndex = 1;
+            txtEndAdd.Location = new Point(321, 388);
+            txtEndAdd.Margin = new Padding(4, 4, 4, 4);
+            txtEndAdd.Name = "txtEndAdd";
+            txtEndAdd.Size = new Size(376, 29);
+            txtEndAdd.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(363, 400);
+            button1.Location = new Point(467, 560);
+            button1.Margin = new Padding(4, 4, 4, 4);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(96, 32);
             button1.TabIndex = 3;
             button1.Text = "Adicionar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // textBox2
+            // txtNomeAdd
             // 
-            textBox2.Location = new Point(250, 163);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(293, 23);
-            textBox2.TabIndex = 5;
+            txtNomeAdd.Location = new Point(321, 228);
+            txtNomeAdd.Margin = new Padding(4, 4, 4, 4);
+            txtNomeAdd.Name = "txtNomeAdd";
+            txtNomeAdd.Size = new Size(376, 29);
+            txtNomeAdd.TabIndex = 5;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(250, 145);
+            label2.Location = new Point(321, 203);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(40, 15);
+            label2.Size = new Size(53, 21);
             label2.TabIndex = 4;
             label2.Text = "Nome";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(250, 202);
+            label3.Location = new Point(321, 283);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(51, 15);
+            label3.Size = new Size(67, 21);
             label3.TabIndex = 8;
             label3.Text = "Telefone";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(443, 202);
+            label4.Location = new Point(570, 283);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(28, 15);
+            label4.Size = new Size(37, 21);
             label4.TabIndex = 10;
             label4.Text = "CPF";
             // 
-            // maskedTextBox1
+            // txtCpfAdd
             // 
-            maskedTextBox1.Location = new Point(443, 220);
-            maskedTextBox1.Mask = "000.000.000-00";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(100, 23);
-            maskedTextBox1.TabIndex = 12;
+            txtCpfAdd.Location = new Point(570, 308);
+            txtCpfAdd.Margin = new Padding(4, 4, 4, 4);
+            txtCpfAdd.Mask = "000.000.000-00";
+            txtCpfAdd.Name = "txtCpfAdd";
+            txtCpfAdd.Size = new Size(127, 29);
+            txtCpfAdd.TabIndex = 12;
             // 
-            // maskedTextBox2
+            // txtTelAdd
             // 
-            maskedTextBox2.Location = new Point(250, 220);
-            maskedTextBox2.Mask = "(00) 00000-0000";
-            maskedTextBox2.Name = "maskedTextBox2";
-            maskedTextBox2.Size = new Size(100, 23);
-            maskedTextBox2.TabIndex = 13;
+            txtTelAdd.Location = new Point(321, 308);
+            txtTelAdd.Margin = new Padding(4, 4, 4, 4);
+            txtTelAdd.Mask = "(00) 00000-0000";
+            txtTelAdd.Name = "txtTelAdd";
+            txtTelAdd.Size = new Size(127, 29);
+            txtTelAdd.TabIndex = 13;
             // 
             // groupBox1
             // 
-            groupBox1.Location = new Point(224, 98);
+            groupBox1.Location = new Point(288, 137);
+            groupBox1.Margin = new Padding(4, 4, 4, 4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(351, 269);
+            groupBox1.Padding = new Padding(4, 4, 4, 4);
+            groupBox1.Size = new Size(451, 377);
             groupBox1.TabIndex = 14;
             groupBox1.TabStop = false;
             groupBox1.Text = "Informações";
             // 
             // FrmAddUser
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1029, 630);
             Controls.Add(button1);
-            Controls.Add(maskedTextBox2);
-            Controls.Add(maskedTextBox1);
+            Controls.Add(txtTelAdd);
+            Controls.Add(txtCpfAdd);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(textBox2);
+            Controls.Add(txtNomeAdd);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(txtEndAdd);
             Controls.Add(label1);
             Controls.Add(groupBox1);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "FrmAddUser";
             Text = "Cadastro de Usuário";
             ResumeLayout(false);
@@ -148,14 +161,14 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtEndAdd;
         private Button button1;
-        private TextBox textBox2;
+        private TextBox txtNomeAdd;
         private Label label2;
         private Label label3;
         private Label label4;
-        private MaskedTextBox maskedTextBox1;
-        private MaskedTextBox maskedTextBox2;
+        private MaskedTextBox txtCpfAdd;
+        private MaskedTextBox txtTelAdd;
         private GroupBox groupBox1;
     }
 }

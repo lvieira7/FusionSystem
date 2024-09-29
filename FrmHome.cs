@@ -21,8 +21,8 @@ namespace FusionSystem
 
         private void menuAdicionar_Click(object sender, EventArgs e)
         {
-            //FrmAddUser frm = new();
-            //frm.Show();
+            FrmAddUser frm = new();
+            frm.Show();
         }
 
         private void menuProdutos_Click(object sender, EventArgs e)
