@@ -1,7 +1,11 @@
-using FusionSystem.Classes;
+using FusionSystem.Classes.Fields;
+using System.Data.Entity;
 using System.Runtime.Versioning;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
+using System.Data.SQLite;
+using System.Runtime.InteropServices.Marshalling;
+using System.Data.SqlClient;
 
 namespace FusionSystem
 {
@@ -28,18 +32,50 @@ namespace FusionSystem
             // Abre o formulário se o campo não estiver vazio
 
 
-            if (isValid) // saída negativa == sem string nos campos
-            {
-
-                FrmHome frm = new FrmHome();
-                frm.Show();
-                this.Hide();
-
-            }
-            else            // Aviso de erro
+            if (!isValid) // saída negativa == sem string nos campos
             {
                 MessageBox.Show("Os seguintes campos precisam serem preenchidos.", "Campos vazios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+            #endregion
+
+            #region Validar Login com Banco
+
+            using (SQLiteCommand query = new ())
+            {
+                // query SQL
+
+                query.CommandText = "SELECT COUNT(*) FROM Login WHERE Nome_Admin=@Usuario AND Senha_Admin=@Senha";
+                query.Parameters.AddWithValue("@Usuario", txtUsuarioLogin.Text);
+                query.Parameters.AddWithValue("@Senha", txtSenhaLogin.Text);
+
+                // Conexão BD
+                SQLiteConnection connection = Classes.DataBase.OpenConnection.OpenConn();
+
+                if (connection != null)
+                {
+                    query.Connection = connection; //classe OpenConnection
+
+                    int result = Convert.ToInt32(query.ExecuteScalar());
+
+                    if (result > 0)
+                    {                    
+                        FrmHome frm = new();
+                        frm.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuário ou senha inválido");
+                    }
+
+                    FusionSystem.Classes.DataBase.CloseConnection.CloseConn(connection);
+                }
+                else
+                {
+                    MessageBox.Show("Falha ao conectar ao banco de dados.");
+                }
+            }
+
             #endregion
         }
 

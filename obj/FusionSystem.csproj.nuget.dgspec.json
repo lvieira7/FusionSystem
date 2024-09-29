@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\DEV\\FusionSystem\\FusionSystem.csproj": {}
+    "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\PROD\\FusionSystem\\FusionSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\DEV\\FusionSystem\\FusionSystem.csproj": {
+    "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\PROD\\FusionSystem\\FusionSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\DEV\\FusionSystem\\FusionSystem.csproj",
+        "projectUniqueName": "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\PROD\\FusionSystem\\FusionSystem.csproj",
         "projectName": "FusionSystem",
-        "projectPath": "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\DEV\\FusionSystem\\FusionSystem.csproj",
+        "projectPath": "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\PROD\\FusionSystem\\FusionSystem.csproj",
         "packagesPath": "C:\\Users\\lviei\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\DEV\\FusionSystem\\obj\\",
+        "outputPath": "C:\\Users\\lviei\\OneDrive\\Área de Trabalho\\PROD\\FusionSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lviei\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -44,6 +44,12 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
