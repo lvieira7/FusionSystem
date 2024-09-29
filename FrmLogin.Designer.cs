@@ -35,6 +35,8 @@
             btnAcessar = new Button();
             txtUsuarioLogin = new TextBox();
             lbUsuarioLogin = new Label();
+            lbErrorUser = new Label();
+            lbErrorPassword = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -49,6 +51,7 @@
             // 
             resources.ApplyResources(txtSenhaLogin, "txtSenhaLogin");
             txtSenhaLogin.Name = "txtSenhaLogin";
+            txtSenhaLogin.UseSystemPasswordChar = true;
             // 
             // lbSenhaLogin
             // 
@@ -66,17 +69,28 @@
             // 
             resources.ApplyResources(txtUsuarioLogin, "txtUsuarioLogin");
             txtUsuarioLogin.Name = "txtUsuarioLogin";
-            txtUsuarioLogin.TextChanged += txtUsuarioLogin_TextChanged;
             // 
             // lbUsuarioLogin
             // 
             resources.ApplyResources(lbUsuarioLogin, "lbUsuarioLogin");
             lbUsuarioLogin.Name = "lbUsuarioLogin";
             // 
+            // lbErrorUser
+            // 
+            resources.ApplyResources(lbErrorUser, "lbErrorUser");
+            lbErrorUser.Name = "lbErrorUser";
+            // 
+            // lbErrorPassword
+            // 
+            resources.ApplyResources(lbErrorPassword, "lbErrorPassword");
+            lbErrorPassword.Name = "lbErrorPassword";
+            // 
             // FrmLogin
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(lbErrorPassword);
+            Controls.Add(lbErrorUser);
             Controls.Add(pictureBox1);
             Controls.Add(txtSenhaLogin);
             Controls.Add(lbSenhaLogin);
@@ -97,5 +111,7 @@
         private Button btnAcessar;
         private TextBox txtUsuarioLogin;
         private Label lbUsuarioLogin;
+        private Label lbErrorUser;
+        private Label lbErrorPassword;
     }
 }

@@ -1,4 +1,4 @@
-﻿using FusionSystem.Classes.DefaultConfig;
+﻿using FusionSystem.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,7 +19,7 @@ namespace FusionSystem
         {
             
             InitializeComponent();
-            DefaultForm.Default(this);
+            Program.Default(this);
         }
     }
 }

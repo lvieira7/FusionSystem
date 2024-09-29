@@ -1,4 +1,4 @@
-﻿using FusionSystem.Classes.DefaultConfig;
+﻿using FusionSystem.Classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +16,7 @@ namespace FusionSystem
     {
         public FrmAddUser()
         {
-            DefaultForm.Default(this);
+            Program.Default(this);
             InitializeComponent();
 
         }
@@ -29,7 +29,7 @@ namespace FusionSystem
                 {
 
                     // Associa a conexão ao comando
-                    cmd.Connection = Classes.DataBase.OpenConnection.OpenConn();
+                    cmd.Connection = Classes.Data.OpenConn();
 
                     cmd.CommandText = "INSERT INTO Usuario(Nome_Usuario, Tel_Usuario, Cpf_Usuario, Endereco_Usuario) " +
                                       "VALUES (@Nome, @Tel, @Cpf, @Endereco)";
@@ -41,7 +41,7 @@ namespace FusionSystem
                     // Executa o comando
                     cmd.ExecuteNonQuery();
 
-                    Classes.DataBase.CloseConnection.CloseConn(cmd.Connection);
+                    Classes.Data.CloseConn(cmd.Connection);
 
                     MessageBox.Show("Dados inseridos com sucesso! ");
                 }

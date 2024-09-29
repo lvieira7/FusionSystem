@@ -13,5 +13,17 @@ namespace FusionSystem
             ApplicationConfiguration.Initialize();
             Application.Run(new FrmLogin());
         }
+
+        // Configuração padrão dos formulários
+        public static void Default(Form form)
+        {
+            form.MaximizeBox = false;
+            form.MinimizeBox = false;
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Size = new Size(
+                width: 1030
+                , height: 600
+                );
+        }
     }
 }

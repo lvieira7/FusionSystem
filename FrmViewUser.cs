@@ -15,6 +15,7 @@ namespace FusionSystem
         public FrmViewUser()
         {
             InitializeComponent();
+            Program.Default(this);
         }
     }
 }

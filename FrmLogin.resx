@@ -149,10 +149,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="txtSenhaLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 259</value>
+    <value>93, 247</value>
   </data>
   <data name="txtSenhaLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -161,7 +161,7 @@
     <value>176, 29</value>
   </data>
   <data name="txtSenhaLogin.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;txtSenhaLogin.Name" xml:space="preserve">
     <value>txtSenhaLogin</value>
@@ -173,7 +173,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtSenhaLogin.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="lbSenhaLogin.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -182,7 +182,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbSenhaLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 234</value>
+    <value>32, 250</value>
   </data>
   <data name="lbSenhaLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -206,7 +206,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbSenhaLogin.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="btnAcessar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -221,7 +221,7 @@
     <value>117, 41</value>
   </data>
   <data name="btnAcessar.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>3</value>
   </data>
   <data name="btnAcessar.Text" xml:space="preserve">
     <value>Acessar</value>
@@ -236,10 +236,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnAcessar.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="txtUsuarioLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 192</value>
+    <value>93, 180</value>
   </data>
   <data name="txtUsuarioLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -248,7 +248,7 @@
     <value>176, 29</value>
   </data>
   <data name="txtUsuarioLogin.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;txtUsuarioLogin.Name" xml:space="preserve">
     <value>txtUsuarioLogin</value>
@@ -260,7 +260,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtUsuarioLogin.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="lbUsuarioLogin.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -269,7 +269,7 @@
     <value>NoControl</value>
   </data>
   <data name="lbUsuarioLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 167</value>
+    <value>21, 183</value>
   </data>
   <data name="lbUsuarioLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
@@ -293,7 +293,61 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lbUsuarioLogin.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
+  </data>
+  <data name="lbErrorUser.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbErrorUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbErrorUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 214</value>
+  </data>
+  <data name="lbErrorUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 21</value>
+  </data>
+  <data name="lbErrorUser.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;lbErrorUser.Name" xml:space="preserve">
+    <value>lbErrorUser</value>
+  </data>
+  <data name="&gt;&gt;lbErrorUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbErrorUser.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbErrorUser.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbErrorPassword.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbErrorPassword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbErrorPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 281</value>
+  </data>
+  <data name="lbErrorPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 21</value>
+  </data>
+  <data name="lbErrorPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lbErrorPassword.Name" xml:space="preserve">
+    <value>lbErrorPassword</value>
+  </data>
+  <data name="&gt;&gt;lbErrorPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbErrorPassword.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbErrorPassword.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -303,9 +357,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>365, 365</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>

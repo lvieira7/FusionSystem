@@ -1,4 +1,3 @@
-using FusionSystem.Classes.Fields;
 using System.Data.Entity;
 using System.Runtime.Versioning;
 using System.Security.Cryptography.X509Certificates;
@@ -6,6 +5,9 @@ using System.Windows.Forms;
 using System.Data.SQLite;
 using System.Runtime.InteropServices.Marshalling;
 using System.Data.SqlClient;
+using System.Reflection.Emit;
+using System.Diagnostics.CodeAnalysis;
+using System.Diagnostics.Eventing.Reader;
 
 namespace FusionSystem
 {
@@ -18,29 +20,34 @@ namespace FusionSystem
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.StartPosition = FormStartPosition.CenterScreen;
+
+            lbErrorUser.Hide();
+            lbErrorPassword.Hide();
         }
 
         private void btnAcessar_Click(object sender, EventArgs e)
         {
-            #region Verifica se os campos estão preenchidos
+            #region Campo vazio
 
-            bool isValid = !string.IsNullOrEmpty(txtUsuarioLogin.Text); //boolean recebe valor do método ( se sim, então não)
-
-            Empty.IsEmpty(txtUsuarioLogin, lbUsuarioLogin);
-            Empty.IsEmpty(txtSenhaLogin, lbSenhaLogin);
-
-            // Abre o formulário se o campo não estiver vazio
-
-
-            if (!isValid) // saída negativa == sem string nos campos
+            if (Classes.Field.IsEmpty(txtUsuarioLogin, lbUsuarioLogin))
             {
-                MessageBox.Show("Os seguintes campos precisam serem preenchidos.", "Campos vazios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show($"Preencha o campo {lbUsuarioLogin.Text}", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtUsuarioLogin.Focus(); // Foca no campo vazio
+                return; // Para o processamento se o campo estiver vazio
             }
+
+            if (Classes.Field.IsEmpty(txtSenhaLogin, lbSenhaLogin))
+            {
+                MessageBox.Show($"Preencha o campo {lbSenhaLogin.Text}", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtSenhaLogin.Focus(); // Foca no campo vazio
+                return; // Para o processamento se o campo estiver vazio
+            }
+
             #endregion
 
             #region Validar Login com Banco
 
-            using (SQLiteCommand query = new ())
+            using (SQLiteCommand query = new())
             {
                 // query SQL
 
@@ -49,7 +56,7 @@ namespace FusionSystem
                 query.Parameters.AddWithValue("@Senha", txtSenhaLogin.Text);
 
                 // Conexão BD
-                SQLiteConnection connection = Classes.DataBase.OpenConnection.OpenConn();
+                SQLiteConnection connection = Classes.Data.OpenConn();
 
                 if (connection != null)
                 {
@@ -58,17 +65,17 @@ namespace FusionSystem
                     int result = Convert.ToInt32(query.ExecuteScalar());
 
                     if (result > 0)
-                    {                    
+                    {
                         FrmHome frm = new();
                         frm.Show();
                         this.Hide();
                     }
                     else
                     {
-                        MessageBox.Show("Usuário ou senha inválido");
+                        MessageBox.Show("Usuário ou senha inválido", "Usuário Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
-                    FusionSystem.Classes.DataBase.CloseConnection.CloseConn(connection);
+                    FusionSystem.Classes.Data.CloseConn(connection);
                 }
                 else
                 {
@@ -76,24 +83,6 @@ namespace FusionSystem
                 }
             }
 
-            #endregion
-        }
-
-        private void txtUsuarioLogin_TextChanged(object sender, EventArgs e)
-        {
-            #region Campo só contém string
-
-            OnlyString str = new();
-
-
-            if (!OnlyString.IsOnlyString(txtUsuarioLogin.Text)) //positivo em caso de número (se não, então sim)
-            {
-                txtUsuarioLogin.BackColor = Color.Red;
-            }
-            else
-            {
-                txtUsuarioLogin.BackColor = Color.White;
-            }
             #endregion
         }
     }
