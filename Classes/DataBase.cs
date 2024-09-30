@@ -29,8 +29,33 @@ namespace FusionSystem.Classes
                 // Abrir conexão com o banco de dados
                 using (var cmd = DataConn.OpenConn().CreateCommand())
                 {
-                    // Cria e executa o comando SQL
-                    cmd.CommandText = "CREATE TABLE IF NOT EXISTS Clientes(id int, Nome Varchar(50), email VarChar(80))";
+                    // Cria a tabela Cliente
+                    cmd.CommandText = @"
+                    CREATE TABLE IF NOT EXISTS Cliente (
+                        ID_Cli INTEGER NOT NULL UNIQUE,
+                        Nome_Cli TEXT,
+                        Tel_Cli TEXT UNIQUE,
+                        Cpf_Cli TEXT UNIQUE,
+                        End_Cli TEXT,
+                        PRIMARY KEY(ID_Cli AUTOINCREMENT)
+                    );
+                ";
+                    cmd.ExecuteNonQuery();
+
+                    // Cria a tabela Login
+                    cmd.CommandText = @"
+                    CREATE TABLE IF NOT EXISTS Login (
+                        User TEXT,
+                        Password TEXT
+                    );
+                ";
+                    cmd.ExecuteNonQuery();
+
+                    // Insere valores na tabela Login
+                    cmd.CommandText = @"
+                    INSERT INTO Login (User, Password)
+                    VALUES ('admin', 'admin');
+                ";
                     cmd.ExecuteNonQuery();
 
                 }

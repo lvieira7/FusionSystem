@@ -51,14 +51,14 @@ namespace FusionSystem
 
             #endregion
 
-            /*
+            
             #region Validar Login com Banco
 
             using (SQLiteCommand query = new())
             {
-                // query SQL
+                // query 
 
-                query.CommandText = "SELECT COUNT(*) FROM Login WHERE Nome_Admin=@Usuario AND Senha_Admin=@Senha";
+                query.CommandText = "SELECT COUNT(*) FROM Login WHERE User=@Usuario AND Password=@Senha";
                 query.Parameters.AddWithValue("@Usuario", txtUsuarioLogin.Text);
                 query.Parameters.AddWithValue("@Senha", txtSenhaLogin.Text);
 
@@ -91,7 +91,7 @@ namespace FusionSystem
             }
 
             #endregion
-            */
+            
         }
 
         private void txtUsuarioLogin_TextChanged(object sender, EventArgs e)
