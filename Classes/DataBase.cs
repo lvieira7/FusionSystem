@@ -26,28 +26,13 @@ namespace FusionSystem.Classes
         {
             try
             {
-                string cmd = @"
-                    CREATE TABLE IF NOT EXISTS ""Cliente"" (
-                        ""ID_Cli"" INTEGER NOT NULL UNIQUE,
-                        ""Nome_Cli"" TEXT,
-                        ""Tel_Cli"" TEXT UNIQUE,
-                        ""CPF_Cli"" TEXT UNIQUE,
-                        ""End_Cli"" TEXT,
-                        PRIMARY KEY(""ID_Cli"")
-                    );
-                ";
-
                 // Abrir conexão com o banco de dados
-                using (var conn = DataConn.OpenConn())
+                using (var cmd = DataConn.OpenConn().CreateCommand())
                 {
-                    // Abre a conexão
-                    conn.Open();
-
                     // Cria e executa o comando SQL
-                    using (SQLiteCommand command = new(cmd, conn))
-                    {
-                        command.ExecuteNonQuery();  // Executa o comando de criação da tabela
-                    }
+                    cmd.CommandText = "CREATE TABLE IF NOT EXISTS Clientes(id int, Nome Varchar(50), email VarChar(80))";
+                    cmd.ExecuteNonQuery();
+
                 }
             }
             catch (Exception ex)
