@@ -21,6 +21,37 @@ namespace FusionSystem.Classes
             return txt.Text.Length < min; // Deve ser menor que o mínimo
         }
 
+        public static bool IsOnlyString(TextBox txt, Label lb) // false em caso de número
+        {
+
+            if(Classes.Field.IsEmpty(txt, lb))
+            {
+                lb.Visible = false; // Esconde a Label se a entrada estiver vazia
+                return true; // Considera como válido
+
+            }
+
+            // Verifica se a string contém apenas letras (a-z, A-Z)
+            if (Regex.IsMatch(txt.Text, @"^[a-zA-Z\s]+$"))
+            {
+                lb.Visible = false; // Esconde a Label se for válido
+                return true;
+            }
+            else
+            {
+                lb.ForeColor = Color.Red;
+                lb.Text = "Apenas letras são permitidas";
+                lb.Visible = true; // Mostra a Label de erro
+                return false;
+            }
+        }
+
+
+    }
+}
+
+ 
+
         /*
         public static bool IsEmpty(TextBox txt)
         {
@@ -47,5 +78,5 @@ namespace FusionSystem.Classes
             return txt.Text.Length <= min;
         }
          */
-    }
-}
+
+

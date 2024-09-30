@@ -23,6 +23,8 @@ namespace FusionSystem
 
             lbErrorUser.Hide();
             lbErrorPassword.Hide();
+
+            btnAcessar.Enabled = false;
         }
 
         private void btnAcessar_Click(object sender, EventArgs e)
@@ -44,6 +46,7 @@ namespace FusionSystem
             }
 
             #endregion
+
 
             #region Validar Login com Banco
 
@@ -84,6 +87,19 @@ namespace FusionSystem
             }
 
             #endregion
+        }
+
+        private void txtUsuarioLogin_TextChanged(object sender, EventArgs e)
+        {
+            if(!Classes.Field.IsOnlyString(txtUsuarioLogin, lbErrorUser) || txtUsuarioLogin.Text.Length == 0)
+            {
+                btnAcessar.Enabled = false;
+            }
+            else
+            {
+                btnAcessar.Enabled = true;
+            }
+
         }
     }
 }
