@@ -29,7 +29,7 @@ namespace FusionSystem
                 {
 
                     // Associa a conexão ao comando
-                    cmd.Connection = Classes.Data.OpenConn();
+                    cmd.Connection = Classes.DataConn.OpenConn();
 
                     cmd.CommandText = "INSERT INTO Usuario(Nome_Usuario, Tel_Usuario, Cpf_Usuario, Endereco_Usuario) " +
                                       "VALUES (@Nome, @Tel, @Cpf, @Endereco)";
@@ -41,7 +41,7 @@ namespace FusionSystem
                     // Executa o comando
                     cmd.ExecuteNonQuery();
 
-                    Classes.Data.CloseConn(cmd.Connection);
+                    Classes.DataConn.CloseConn(cmd.Connection);
 
                     MessageBox.Show("Dados inseridos com sucesso! ");
                 }

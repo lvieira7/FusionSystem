@@ -25,6 +25,10 @@ namespace FusionSystem
             lbErrorPassword.Hide();
 
             btnAcessar.Enabled = false;
+
+            // CRIAR BD PRIMEIRO ACESSO
+            Classes.DataBase.CreateData();
+            Classes.DataBase.CreateTable();
         }
 
         private void btnAcessar_Click(object sender, EventArgs e)
@@ -47,7 +51,7 @@ namespace FusionSystem
 
             #endregion
 
-
+            /*
             #region Validar Login com Banco
 
             using (SQLiteCommand query = new())
@@ -59,7 +63,7 @@ namespace FusionSystem
                 query.Parameters.AddWithValue("@Senha", txtSenhaLogin.Text);
 
                 // Conexão BD
-                SQLiteConnection connection = Classes.Data.OpenConn();
+                SQLiteConnection connection = Classes.DataConn.OpenConn();
 
                 if (connection != null)
                 {
@@ -78,7 +82,7 @@ namespace FusionSystem
                         MessageBox.Show("Usuário ou senha inválido", "Usuário Invalido", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
-                    FusionSystem.Classes.Data.CloseConn(connection);
+                    FusionSystem.Classes.DataConn.CloseConn(connection);
                 }
                 else
                 {
@@ -87,11 +91,12 @@ namespace FusionSystem
             }
 
             #endregion
+            */
         }
 
         private void txtUsuarioLogin_TextChanged(object sender, EventArgs e)
         {
-            if(!Classes.Field.IsOnlyString(txtUsuarioLogin, lbErrorUser) || txtUsuarioLogin.Text.Length == 0)
+            if(!Classes.Field.IsOnlyString(txtUsuarioLogin, lbErrorUser) || txtUsuarioLogin.Text.Length == 0) // Se retornar false entao aqui vai ser true
             {
                 btnAcessar.Enabled = false;
             }
