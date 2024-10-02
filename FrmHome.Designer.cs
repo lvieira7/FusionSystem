@@ -30,9 +30,10 @@
         {
             menuHome = new MenuStrip();
             menuCheckout = new ToolStripMenuItem();
+            menuPDV = new ToolStripMenuItem();
             menuRelatorio = new ToolStripMenuItem();
             menuEstoque = new ToolStripMenuItem();
-            menuProdutos = new ToolStripMenuItem();
+            menuAddProduto = new ToolStripMenuItem();
             menuUsuarios = new ToolStripMenuItem();
             menuAdicionar = new ToolStripMenuItem();
             menuConsultar = new ToolStripMenuItem();
@@ -42,7 +43,7 @@
             menuTermo = new ToolStripMenuItem();
             menuFusionSystem = new ToolStripMenuItem();
             pictureBox1 = new PictureBox();
-            menuPDV = new ToolStripMenuItem();
+            menuConsultProduto = new ToolStripMenuItem();
             menuHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -65,25 +66,32 @@
             menuCheckout.Size = new Size(61, 25);
             menuCheckout.Text = "Caixa";
             // 
+            // menuPDV
+            // 
+            menuPDV.Name = "menuPDV";
+            menuPDV.Size = new Size(202, 26);
+            menuPDV.Text = "Ponto de Venda";
+            menuPDV.Click += menuPDV_Click;
+            // 
             // menuRelatorio
             // 
             menuRelatorio.Name = "menuRelatorio";
-            menuRelatorio.Size = new Size(224, 26);
+            menuRelatorio.Size = new Size(202, 26);
             menuRelatorio.Text = "Relatório";
             // 
             // menuEstoque
             // 
-            menuEstoque.DropDownItems.AddRange(new ToolStripItem[] { menuProdutos });
+            menuEstoque.DropDownItems.AddRange(new ToolStripItem[] { menuAddProduto, menuConsultProduto });
             menuEstoque.Name = "menuEstoque";
             menuEstoque.Size = new Size(79, 25);
             menuEstoque.Text = "Estoque";
             // 
-            // menuProdutos
+            // menuAddProduto
             // 
-            menuProdutos.Name = "menuProdutos";
-            menuProdutos.Size = new Size(157, 26);
-            menuProdutos.Text = "Produtos";
-            menuProdutos.Click += menuProdutos_Click;
+            menuAddProduto.Name = "menuAddProduto";
+            menuAddProduto.Size = new Size(224, 26);
+            menuAddProduto.Text = "Adicionar Produto";
+            menuAddProduto.Click += menuProdutos_Click;
             // 
             // menuUsuarios
             // 
@@ -95,14 +103,14 @@
             // menuAdicionar
             // 
             menuAdicionar.Name = "menuAdicionar";
-            menuAdicionar.Size = new Size(161, 26);
+            menuAdicionar.Size = new Size(224, 26);
             menuAdicionar.Text = "Adicionar";
             menuAdicionar.Click += menuAdicionar_Click;
             // 
             // menuConsultar
             // 
             menuConsultar.Name = "menuConsultar";
-            menuConsultar.Size = new Size(161, 26);
+            menuConsultar.Size = new Size(224, 26);
             menuConsultar.Text = "Consultar";
             // 
             // menuSuporte
@@ -148,12 +156,11 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // menuPDV
+            // menuConsultProduto
             // 
-            menuPDV.Name = "menuPDV";
-            menuPDV.Size = new Size(224, 26);
-            menuPDV.Text = "Ponto de Venda";
-            menuPDV.Click += menuPDV_Click;
+            menuConsultProduto.Name = "menuConsultProduto";
+            menuConsultProduto.Size = new Size(224, 26);
+            menuConsultProduto.Text = "Consultar Estoque";
             // 
             // FrmHome
             // 
@@ -179,7 +186,7 @@
         private ToolStripMenuItem menuCheckout;
         private ToolStripMenuItem menuRelatorio;
         private ToolStripMenuItem menuEstoque;
-        private ToolStripMenuItem menuProdutos;
+        private ToolStripMenuItem menuAddProduto;
         private ToolStripMenuItem menuUsuarios;
         private ToolStripMenuItem menuAdicionar;
         private ToolStripMenuItem menuSuporte;
@@ -190,5 +197,6 @@
         private ToolStripMenuItem menuConsultar;
         private PictureBox pictureBox1;
         private ToolStripMenuItem menuPDV;
+        private ToolStripMenuItem menuConsultProduto;
     }
 }

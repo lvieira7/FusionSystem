@@ -23,6 +23,7 @@ namespace FusionSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             try
             {
                 using (SQLiteCommand cmd = new())
@@ -31,13 +32,18 @@ namespace FusionSystem
                     Classes.Query.Insert(txtNomeAdd, txtTelAdd, txtCpfAdd, txtEndAdd);
 
                     MessageBox.Show("Dados inseridos com sucesso! ");
+
+                    txtNomeAdd.Text = "";
+                    txtTelAdd.Text = "";
+                    txtCpfAdd.Text = "";
+                    txtEndAdd.Text = "";
+
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
     }
 }

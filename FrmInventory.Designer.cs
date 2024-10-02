@@ -34,7 +34,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1012, 553);
             Name = "FrmInventory";
             Text = "Estoque";
             ResumeLayout(false);

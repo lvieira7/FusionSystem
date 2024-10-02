@@ -53,7 +53,7 @@
             // txtEndAdd
             // 
             txtEndAdd.Location = new Point(321, 388);
-            txtEndAdd.Margin = new Padding(4, 4, 4, 4);
+            txtEndAdd.Margin = new Padding(4);
             txtEndAdd.Name = "txtEndAdd";
             txtEndAdd.Size = new Size(376, 29);
             txtEndAdd.TabIndex = 1;
@@ -61,7 +61,7 @@
             // button1
             // 
             button1.Location = new Point(467, 560);
-            button1.Margin = new Padding(4, 4, 4, 4);
+            button1.Margin = new Padding(4);
             button1.Name = "button1";
             button1.Size = new Size(96, 32);
             button1.TabIndex = 3;
@@ -72,7 +72,7 @@
             // txtNomeAdd
             // 
             txtNomeAdd.Location = new Point(321, 228);
-            txtNomeAdd.Margin = new Padding(4, 4, 4, 4);
+            txtNomeAdd.Margin = new Padding(4);
             txtNomeAdd.Name = "txtNomeAdd";
             txtNomeAdd.Size = new Size(376, 29);
             txtNomeAdd.TabIndex = 5;
@@ -110,7 +110,7 @@
             // txtCpfAdd
             // 
             txtCpfAdd.Location = new Point(570, 308);
-            txtCpfAdd.Margin = new Padding(4, 4, 4, 4);
+            txtCpfAdd.Margin = new Padding(4);
             txtCpfAdd.Mask = "000.000.000-00";
             txtCpfAdd.Name = "txtCpfAdd";
             txtCpfAdd.Size = new Size(127, 29);
@@ -119,7 +119,7 @@
             // txtTelAdd
             // 
             txtTelAdd.Location = new Point(321, 308);
-            txtTelAdd.Margin = new Padding(4, 4, 4, 4);
+            txtTelAdd.Margin = new Padding(4);
             txtTelAdd.Mask = "(00) 00000-0000";
             txtTelAdd.Name = "txtTelAdd";
             txtTelAdd.Size = new Size(127, 29);
@@ -128,9 +128,9 @@
             // groupBox1
             // 
             groupBox1.Location = new Point(288, 137);
-            groupBox1.Margin = new Padding(4, 4, 4, 4);
+            groupBox1.Margin = new Padding(4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(4, 4, 4, 4);
+            groupBox1.Padding = new Padding(4);
             groupBox1.Size = new Size(451, 377);
             groupBox1.TabIndex = 14;
             groupBox1.TabStop = false;
@@ -151,9 +151,9 @@
             Controls.Add(txtEndAdd);
             Controls.Add(label1);
             Controls.Add(groupBox1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "FrmAddUser";
-            Text = "Cadastro de Usuário";
+            Text = "Cadastro de Cliente";
             ResumeLayout(false);
             PerformLayout();
         }
