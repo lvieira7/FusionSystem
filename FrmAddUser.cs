@@ -28,20 +28,7 @@ namespace FusionSystem
                 using (SQLiteCommand cmd = new())
                 {
 
-                    // Associa a conexão ao comando
-                    cmd.Connection = Classes.DataConn.OpenConn();
-
-                    cmd.CommandText = "INSERT INTO Usuario(Nome_Usuario, Tel_Usuario, Cpf_Usuario, Endereco_Usuario) " +
-                                      "VALUES (@Nome, @Tel, @Cpf, @Endereco)";
-                    cmd.Parameters.AddWithValue("@Nome", txtNomeAdd.Text);
-                    cmd.Parameters.AddWithValue("@Tel", txtTelAdd.Text);
-                    cmd.Parameters.AddWithValue("@Cpf", txtCpfAdd.Text);
-                    cmd.Parameters.AddWithValue("@Endereco", txtEndAdd.Text);
-
-                    // Executa o comando
-                    cmd.ExecuteNonQuery();
-
-                    Classes.DataConn.CloseConn(cmd.Connection);
+                    Classes.Query.Insert(txtNomeAdd, txtTelAdd, txtCpfAdd, txtEndAdd);
 
                     MessageBox.Show("Dados inseridos com sucesso! ");
                 }

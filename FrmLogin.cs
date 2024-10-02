@@ -96,7 +96,7 @@ namespace FusionSystem
 
         private void txtUsuarioLogin_TextChanged(object sender, EventArgs e)
         {
-            if(!Classes.Field.IsOnlyString(txtUsuarioLogin, lbErrorUser) || txtUsuarioLogin.Text.Length == 0) // Se retornar false entao aqui vai ser true
+            if(!Classes.Field.IsOnlyString(txtUsuarioLogin, lbErrorUser) || txtUsuarioLogin.Text.Length == 0) // campo vazio ou sem string desabilita button
             {
                 btnAcessar.Enabled = false;
             }

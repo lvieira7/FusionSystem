@@ -10,10 +10,10 @@ namespace FusionSystem.Classes
         {
             try
             {
-                // Verifica se o arquivo de banco de dados já existe antes de criar
-                if (!System.IO.File.Exists(@"C:\FusionSystemDB\Corpore.db"))
+                // Verifica se o diretório banco de dados já existe antes de criar
+                if (!System.IO.Directory.Exists(@"C:\FusionSystemDB"))
                 {
-                    SQLiteConnection.CreateFile(@"C:\FusionSystemDB\Corpore.db"); // Cria o arquivo do BD
+                    System.IO.Directory.CreateDirectory(@"C:\FusionSystemDB");
                 }
             }
             catch (Exception ex)
