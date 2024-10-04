@@ -19,11 +19,22 @@ namespace FusionSystem
         {
             form.MaximizeBox = false;
             form.MinimizeBox = false;
+            form.FormBorderStyle = FormBorderStyle.FixedSingle;
             form.StartPosition = FormStartPosition.CenterScreen;
-            form.Size = new Size(
-                width: 1030
-                , height: 600
-                );
+            form.Size = new(1030, 600);
+           
+
+        }
+        // Sobrecarga
+        public static void Default(Form form, int x, int y)
+        {
+            form.MaximizeBox = false;
+            form.MinimizeBox = false;
+            form.FormBorderStyle = FormBorderStyle.FixedSingle;
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Size = new(x, y);
+
+
         }
     }
 }

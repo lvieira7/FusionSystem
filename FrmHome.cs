@@ -29,14 +29,14 @@ namespace FusionSystem
         {
             FrmAddInventory frm = new();
             frm.Show();
-            this.Hide();
+
         }
 
         private void menuPDV_Click(object sender, EventArgs e)
         {
             FrmPDV frm = new FrmPDV();
             frm.Show(); 
-            this.Hide();
+
         }
     }
 }

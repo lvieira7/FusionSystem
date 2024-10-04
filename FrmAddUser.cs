@@ -16,8 +16,9 @@ namespace FusionSystem
     {
         public FrmAddUser()
         {
-            Program.Default(this);
+            
             InitializeComponent();
+            Program.Default(this, 819, 489);
 
         }
 

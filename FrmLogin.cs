@@ -16,10 +16,12 @@ namespace FusionSystem
 
         public FrmLogin()
         {
+
+
             InitializeComponent();
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.StartPosition = FormStartPosition.CenterScreen;
+
+            //default setting form
+            Program.Default(this, 300, 300);
 
             lbErrorUser.Hide();
             lbErrorPassword.Hide();

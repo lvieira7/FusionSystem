@@ -14,7 +14,9 @@ namespace FusionSystem
     {
         public FrmAddInventory()
         {
+            
             InitializeComponent();
+            Program.Default(this, 816, 489);
         }
     }
 }
