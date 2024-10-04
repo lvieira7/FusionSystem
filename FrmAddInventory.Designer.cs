@@ -41,8 +41,8 @@
             lbCorProd = new Label();
             txtCorProd = new TextBox();
             lbCatProd = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
+            comboTamanho = new ComboBox();
+            comboCategoria = new ComboBox();
             groupBox1 = new GroupBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -62,6 +62,7 @@
             button1.TabIndex = 1;
             button1.Text = "Adicionar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // lbNomeProd
             // 
@@ -148,31 +149,33 @@
             // lbCatProd
             // 
             lbCatProd.AutoSize = true;
-            lbCatProd.Location = new Point(250, 149);
+            lbCatProd.Location = new Point(250, 141);
             lbCatProd.Name = "lbCatProd";
             lbCatProd.Size = new Size(58, 15);
             lbCatProd.TabIndex = 16;
             lbCatProd.Text = "Categoria";
             // 
-            // comboBox1
+            // comboTamanho
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(241, 216);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(61, 23);
-            comboBox1.TabIndex = 17;
+            comboTamanho.FormattingEnabled = true;
+            comboTamanho.Items.AddRange(new object[] { "P", "M", "G", "GG" });
+            comboTamanho.Location = new Point(241, 216);
+            comboTamanho.Name = "comboTamanho";
+            comboTamanho.Size = new Size(61, 23);
+            comboTamanho.TabIndex = 17;
             // 
-            // comboBox2
+            // comboCategoria
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(250, 167);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(100, 23);
-            comboBox2.TabIndex = 18;
+            comboCategoria.FormattingEnabled = true;
+            comboCategoria.Items.AddRange(new object[] { "Masculino", "Feminino" });
+            comboCategoria.Location = new Point(250, 159);
+            comboCategoria.Name = "comboCategoria";
+            comboCategoria.Size = new Size(100, 23);
+            comboCategoria.TabIndex = 18;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(comboBox2);
+            groupBox1.Controls.Add(comboCategoria);
             groupBox1.Controls.Add(lbCatProd);
             groupBox1.Controls.Add(txtQntProd);
             groupBox1.Controls.Add(lbQntProd);
@@ -188,7 +191,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(comboBox1);
+            Controls.Add(comboTamanho);
             Controls.Add(lbCorProd);
             Controls.Add(txtCorProd);
             Controls.Add(lbPrecoProd);
@@ -223,8 +226,8 @@
         private Label lbCorProd;
         private TextBox txtCorProd;
         private Label lbCatProd;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private ComboBox comboTamanho;
+        private ComboBox comboCategoria;
         private GroupBox groupBox1;
     }
 }
