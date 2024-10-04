@@ -1,5 +1,4 @@
-﻿using FusionSystem.Classes;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,15 +10,11 @@ using System.Windows.Forms;
 
 namespace FusionSystem
 {
-
-    public partial class FrmInventory : Form
+    public partial class FrmAddInventory : Form
     {
-
-        public FrmInventory()
+        public FrmAddInventory()
         {
-            
             InitializeComponent();
-            Program.Default(this);
         }
     }
 }

@@ -27,7 +27,7 @@ namespace FusionSystem
 
         private void menuProdutos_Click(object sender, EventArgs e)
         {
-            FrmInventory frm = new FrmInventory();
+            FrmAddInventory frm = new();
             frm.Show();
             this.Hide();
         }
