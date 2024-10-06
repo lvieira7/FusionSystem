@@ -18,7 +18,7 @@ namespace FusionSystem
         {
             
             InitializeComponent();
-            Program.Default(this, 819, 489);
+            Program.Default(this, 1047, 677);
 
         }
 
