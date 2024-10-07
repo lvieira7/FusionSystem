@@ -44,7 +44,7 @@ namespace FusionSystem.Classes
 
                     // Cria a talela Produtos
                     cmd.CommandText = @"
-                      CREATE TABLE Produtos (
+                      CREATE TABLE IF NOT EXISTS Produtos (
 	                        ID_Prod	INTEGER NOT NULL UNIQUE,
 	                        Nome_Prod	TEXT NOT NULL,
 	                        Descricao_Prod	TEXT NOT NULL,
