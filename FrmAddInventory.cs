@@ -17,7 +17,7 @@ namespace FusionSystem
         {
 
             InitializeComponent();
-            Program.Default(this, 816, 489);
+            Program.Default(this, 1047, 677);
         }
 
         private void button1_Click(object sender, EventArgs e)
