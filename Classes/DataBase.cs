@@ -42,23 +42,38 @@ namespace FusionSystem.Classes
                 ";
                     cmd.ExecuteNonQuery();
 
-                    // Cria a tabela Login
+                    // Cria a talela Produtos
                     cmd.CommandText = @"
+                      CREATE TABLE Produtos (
+	                        ID_Prod	INTEGER NOT NULL UNIQUE,
+	                        Nome_Prod	TEXT NOT NULL,
+	                        Descricao_Prod	TEXT NOT NULL,
+	                        Tamanho_Prod	TEXT NOT NULL,
+	                        Cor_Prod	TEXT NOT NULL,
+	                        Preco_Prod	REAL NOT NULL,
+	                        Quantidade_Prod	INTEGER NOT NULL,
+	                        Categoria_Prod	TEXT NOT NULL,
+	                        PRIMARY KEY(ID_Prod AUTOINCREMENT)
+                        );
+                ";
+                    cmd.ExecuteNonQuery();
+                        // Cria a tabela Login
+                        cmd.CommandText = @"
                     CREATE TABLE IF NOT EXISTS Login (
                         User TEXT,
                         Password TEXT
                     );
                 ";
-                    cmd.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery();
 
-                    // Insere valores na tabela Login
-                    cmd.CommandText = @"
+                        // Insere valores na tabela Login
+                        cmd.CommandText = @"
                     INSERT INTO Login (User, Password)
                     VALUES ('admin', 'admin');
                 ";
-                    cmd.ExecuteNonQuery();
+                        cmd.ExecuteNonQuery();
 
-                }
+                    }
             }
             catch (Exception ex)
             {
