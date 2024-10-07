@@ -16,6 +16,7 @@ namespace FusionSystem.Classes
         {
             return string.IsNullOrWhiteSpace(txt.Text); // Retorna verdadeiro se o campo está vazio
         }
+
         public static bool MinLength(TextBox txt, Label lb, int min = 3)
         {
             return txt.Text.Length < min; // Deve ser menor que o mínimo

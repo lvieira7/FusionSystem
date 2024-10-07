@@ -35,8 +35,14 @@ namespace FusionSystem
         private void menuPDV_Click(object sender, EventArgs e)
         {
             FrmPDV frm = new FrmPDV();
-            frm.Show(); 
+            frm.Show();
 
+        }
+
+        private void menuConsultar_Click(object sender, EventArgs e)
+        {
+            FrmViewUser frm = new FrmViewUser();
+            frm.Show();
         }
     }
 }

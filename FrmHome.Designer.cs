@@ -108,15 +108,16 @@
             // menuAdicionar
             // 
             menuAdicionar.Name = "menuAdicionar";
-            menuAdicionar.Size = new Size(125, 22);
+            menuAdicionar.Size = new Size(180, 22);
             menuAdicionar.Text = "Adicionar";
             menuAdicionar.Click += menuAdicionar_Click;
             // 
             // menuConsultar
             // 
             menuConsultar.Name = "menuConsultar";
-            menuConsultar.Size = new Size(125, 22);
+            menuConsultar.Size = new Size(180, 22);
             menuConsultar.Text = "Consultar";
+            menuConsultar.Click += menuConsultar_Click;
             // 
             // menuSuporte
             // 
@@ -155,7 +156,7 @@
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = Properties.Resources.luxa_org_opacity_changed_logotipoFrmHome;
             pictureBox1.Location = new Point(0, 24);
-            pictureBox1.Margin = new Padding(2, 2, 2, 2);
+            pictureBox1.Margin = new Padding(2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(800, 426);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
