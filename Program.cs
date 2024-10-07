@@ -15,23 +15,27 @@ namespace FusionSystem
         }
 
         // Configuração padrão dos formulários
-        public static void Default(Form form)
+        public static void DefaultForm(Form form)
         {
             form.MaximizeBox = false;
             form.MinimizeBox = false;
             form.FormBorderStyle = FormBorderStyle.FixedSingle;
             form.StartPosition = FormStartPosition.CenterScreen;
+            form.FormBorderStyle = FormBorderStyle.FixedSingle;  // Impede o redimensionamento
             form.Size = new(1030, 600);
-           
+
+
+
 
         }
         // Sobrecarga
-        public static void Default(Form form, int x, int y)
+        public static void DefaultForm(Form form, int x, int y)
         {
             form.MaximizeBox = false;
             form.MinimizeBox = false;
             form.FormBorderStyle = FormBorderStyle.FixedSingle;
             form.StartPosition = FormStartPosition.CenterScreen;
+            form.FormBorderStyle = FormBorderStyle.FixedSingle;  // Impede o redimensionamento
             form.Size = new(x, y);
 
 

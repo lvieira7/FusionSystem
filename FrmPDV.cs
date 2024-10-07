@@ -16,7 +16,7 @@ namespace FusionSystem
         public FrmPDV()
         {
             InitializeComponent();
-            Program.Default(this, 1030, 600);
+            Program.DefaultForm(this, 816, 489);
         }
     }
 }

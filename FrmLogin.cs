@@ -21,7 +21,7 @@ namespace FusionSystem
             InitializeComponent();
 
             //default setting form 383; 412
-            Program.Default(this, 386, 412);
+            Program.DefaultForm(this, 300, 300);
 
             lbErrorUser.Hide();
             lbErrorPassword.Hide();

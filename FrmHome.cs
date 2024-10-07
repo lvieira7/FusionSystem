@@ -16,7 +16,7 @@ namespace FusionSystem
         public FrmHome()
         {
             InitializeComponent();
-            Program.Default(this);
+            Program.DefaultForm(this);
         }
 
         private void menuAdicionar_Click(object sender, EventArgs e)
