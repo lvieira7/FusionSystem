@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.ComponentModel.Design.ObjectSelectorEditor;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace FusionSystem
 {
@@ -34,7 +35,7 @@ namespace FusionSystem
             listClientes.LabelEdit = false;
 
             // Impede a seleção 
-            listClientes.Enabled = false; // Desabilita o controle inteiro
+            listClientes.Enabled = true; // Desabilita o controle inteiro
 
 
             // iniciando list view
@@ -53,7 +54,7 @@ namespace FusionSystem
             listClientes.Columns.Add("CPF", 100);
             listClientes.Columns.Add("Endereço", 200);
 
-            DataList.DefaultClientView(listClientes);
+            ClientDataView.DefaultClientView(listClientes);
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
@@ -61,15 +62,28 @@ namespace FusionSystem
 
             if (!Field.IsEmpty(txtNome, lbNome))
             {
-                DataList.ClientViewParameter(listClientes, txtNome);
+                ClientDataView.ClientViewParameter(listClientes, txtNome);
+            }else
+            {
+                MessageBox.Show("Campo de pesquisa vazio.", "Campo vazio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtNome.Text = "";
-            DataList.DefaultClientView(listClientes);
+            ClientDataView.DefaultClientView(listClientes);
 
         }
+
+        private void listClientes_ItemActivate(object sender, EventArgs e)
+        {
+            ListViewItem selectedItem = listClientes.SelectedItems[0];
+
+            FrmEditUser frm = new();
+            frm.Show();
+
+        }
+        
     }
 }

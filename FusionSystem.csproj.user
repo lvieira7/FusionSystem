@@ -7,6 +7,9 @@
     <Compile Update="FrmAddUser.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>

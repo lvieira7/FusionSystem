@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace FusionSystem.Classes
 {
-    internal class DataList
+    internal class ClientDataView
     {
         public static void DefaultClientView(ListView list)
         {
