@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas.vieira\\Desktop\\remoto\\FusionSystem\\FusionSystem.csproj": {}
+    "C:\\Users\\lucas.vieira\\Desktop\\FusionSystem\\FusionSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas.vieira\\Desktop\\remoto\\FusionSystem\\FusionSystem.csproj": {
+    "C:\\Users\\lucas.vieira\\Desktop\\FusionSystem\\FusionSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas.vieira\\Desktop\\remoto\\FusionSystem\\FusionSystem.csproj",
+        "projectUniqueName": "C:\\Users\\lucas.vieira\\Desktop\\FusionSystem\\FusionSystem.csproj",
         "projectName": "FusionSystem",
-        "projectPath": "C:\\Users\\lucas.vieira\\Desktop\\remoto\\FusionSystem\\FusionSystem.csproj",
+        "projectPath": "C:\\Users\\lucas.vieira\\Desktop\\FusionSystem\\FusionSystem.csproj",
         "packagesPath": "C:\\Users\\lucas.vieira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas.vieira\\Desktop\\remoto\\FusionSystem\\obj\\",
+        "outputPath": "C:\\Users\\lucas.vieira\\Desktop\\FusionSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lucas.vieira\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.ComponentModel.Design.ObjectSelectorEditor;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace FusionSystem
 {
@@ -80,7 +81,15 @@ namespace FusionSystem
         {
             ListViewItem selectedItem = listClientes.SelectedItems[0];
 
-            FrmEditUser frm = new();
+
+            string nome = selectedItem.SubItems[0].Text;       // Nome do cliente
+            string tel = selectedItem.SubItems[1].Text;        // CPF do cliente
+            string cpf = selectedItem.SubItems[2].Text;        // Telefone do cliente
+            string end = selectedItem.SubItems[3].Text;        // Email do cliente
+
+
+
+            FrmEditUser frm = new(nome, cpf, tel, end);
             frm.Show();
 
         }

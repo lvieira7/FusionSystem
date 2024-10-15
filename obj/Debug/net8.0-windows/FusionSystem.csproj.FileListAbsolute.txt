@@ -155,3 +155,4 @@ C:\Users\lucas.vieira\Desktop\remoto\FusionSystem\obj\Debug\net8.0-windows\Fusio
 C:\Users\lucas.vieira\Desktop\remoto\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.genruntimeconfig.cache
 C:\Users\lucas.vieira\Desktop\remoto\FusionSystem\obj\Debug\net8.0-windows\ref\FusionSystem.dll
 C:\Users\lucas.vieira\Desktop\remoto\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.FrmEditUser.resources
+C:\Users\lucas.vieira\Desktop\FusionSystem\obj\Debug\net8.0-windows\FusionSystem.FrmEditUser.resources
